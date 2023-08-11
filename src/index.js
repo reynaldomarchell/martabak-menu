@@ -106,7 +106,7 @@ function Martabak({ martabakObj }) {
 
 function Footer() {
   const hour = new Date().getHours();
-  const openHour = 17;
+  const openHour = 0;
   const closeHour = 23;
   const isOpen = hour >= openHour && hour <= closeHour;
 
