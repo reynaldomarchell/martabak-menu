@@ -1,5 +1,3 @@
-import "../styles.css";
-
 function Martabak({ martabakObj }) {
   console.log(martabakObj);
 

@@ -1,5 +1,4 @@
 import Martabak from "./Martabak";
-import "../styles.css";
 
 function Menu() {
   const martabaks = martabakData;
@@ -11,16 +10,19 @@ function Menu() {
 
       {numMartabaks > 0 ? (
         <>
-          <p>Martabak manis dan telor dengan cita rasa khas, disajikan dengan
-            bahan-bahan yang berkualitas tinggi.</p>
+          <p>
+            Martabak manis dan telor dengan cita rasa khas, disajikan dengan
+            bahan-bahan yang berkualitas tinggi.
+          </p>
           <ul className="martabaks">
-            {martabaks.map(martabak => (
+            {martabaks.map((martabak) => (
               <Martabak martabakObj={martabak} key={martabak.name} />
             ))}
           </ul>
         </>
-      ) : <p> Menu sedang dalam pengerjaan. Silahkan kembali lagi nanti. 🤖</p>
-      }
+      ) : (
+        <p> Menu sedang dalam pengerjaan. Silahkan kembali lagi nanti. 🤖</p>
+      )}
     </main>
   );
 }

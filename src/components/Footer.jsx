@@ -1,5 +1,4 @@
 import Order from "./Order";
-import "../styles.css";
 
 function Footer() {
   const hour = new Date().getHours();
@@ -13,12 +12,12 @@ function Footer() {
         <Order openHour={openHour} closeHour={closeHour} />
       ) : (
         <p>
-          Mohon maaf toko sedang tutup, kami buka pada pukul {openHour}:00 sampai {closeHour}:00.
+          Mohon maaf toko sedang tutup, kami buka pada pukul {openHour}:00
+          sampai {closeHour}:00.
         </p>
       )}
     </footer>
   );
-
 }
 
 export default Footer;
