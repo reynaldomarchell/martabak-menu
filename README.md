@@ -9,7 +9,7 @@
 1. Clone this project
 
 ```bash
-  git https://github.com/reynaldomarchell/martabak-menu.git martabak-menu
+  git clone https://github.com/reynaldomarchell/martabak-menu.git martabak-menu
 ```
 
 2.  Go to the project directory
